@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+</head>
+<body>
+  <script>
+  // const student = {
+  //   nama: 'Dedi',
+  //   jurusan: 'Ipa',
+  //   sapa: function() {
+  //     console.log(`Halo ${this.nama} dengan jurusan ${this.jurusan}`);
+  //   },
+  // }
+
+  const Student = function() {
+    this.nama = 'Dedi',
+    this.umur = 20,
+    this.sapa = () => {
+      console.log(`Halo ${this.nama} dengan jurusan ${this.jurusan}`);
+    }
+
+    setInterval(() => {
+      console.log(this.umur++);
+    }, 1000);
+  }
+
+  const dedi = new Student()
+  </script>
+</body>
+</html>
